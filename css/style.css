@@ -1,0 +1,129 @@
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 2px;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.content {
+  box-sizing: border-box;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: auto;
+  background-color: rgba(157, 157, 157, 0.283);
+  border: 2px solid black;
+  border-top: 0;
+  border-bottom: 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.702);
+}
+header {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.777);
+  display: flex;
+  align-items: end;
+  padding: 3px 5px 0px 5px;
+}
+.logo {
+  flex: 1 0 auto;
+  justify-content: flex-start;
+}
+.logo img {
+  margin-left: 5px;
+  margin-top: 2px;
+  width: 25vw;
+  height: auto;
+  min-width: 100px;
+  max-width: 200px;
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 6px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .navbar a .link-text {
+    display: none;
+  }
+}
+main {
+  margin: 5% 10%;
+}
+.main-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.562);
+  -webkit-text-stroke: 1px rgba(126, 126, 126, 0.562);
+  background-color: rgba(45, 45, 45, 0.693);
+  box-shadow: 4px 10px 20px 10px rgba(36, 36, 36, 0.88);
+  border-radius: 1%;
+  white-space: nowrap;
+}
+.main-image-header {
+  text-align: right;
+  padding: 2%;
+  font-size: 2vw;
+}
+.main-image-header .first-p {
+  padding-right: 3%;
+  margin: 0;
+}
+.main-image-header .second-p {
+  padding-right: 5%;
+  margin: 0;
+}
+.main-image img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.main-image-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vw;
+}
+.main-image-caption {
+  text-align: left;
+}
+.main-image-caption .first-p {
+  padding-left: 4%;
+  padding-top: 4%;
+  margin: 0;
+}
+.main-image-caption .second-p {
+  padding-left: 6%;
+  padding-bottom: 0%;
+  margin: 0;
+}
+.main-image-photo-cred {
+  text-align: right;
+  top: 0;
+  margin: 0;
+  padding-right: 2%;
+  align-self: flex-start;
+}
+.main-image-photo-cred a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: normal;
+}
